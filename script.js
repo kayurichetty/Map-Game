@@ -1,5 +1,9 @@
 let currentCountry = null;
 
+document
+  .getElementById("next-btn")
+  .addEventListener("click", () => loadRandomCountry());
+
 function loadRandomCountry() {
   fetch("countries.json")
     .then((res) => res.json())
