@@ -9,11 +9,18 @@
   <body>
     <div class="container">
       <h1>Guess the Country</h1>
+      <p id="countryname" style="margin-bottom: 10px"></p>
       <div id="svg-container"></div>
+      <div id="angle">
+        <h6 id="angletext"></h6>
+      </div>
       <input type="text" id="guess-input" placeholder="Enter country name..." />
       <button id="submit-btn">Guess</button>
       <p id="feedback" style="margin-bottom: 10px"></p>
-      <button id="next-btn" style="display: block; margin-top: 10px">
+      <button
+        id="next-btn"
+        style="display: block; margin-top: 10px; visibility: hidden"
+      >
         Next
       </button>
     </div>
